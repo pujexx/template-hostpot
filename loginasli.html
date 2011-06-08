@@ -1,0 +1,175 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>..:: HotSpot -LogIn ::..</title>
+<style type="text/css">
+<!--
+.style10 {color: #FF0000}
+-->
+</style>
+</head>
+<style><!--a:hover{color:#000080; text-decoration:underline; }--></style>
+<style>
+<!--a{text-decoration:none}; //.style1 {
+	font-size: 10px;
+	font-weight: bold;
+}
+.style1 {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style3 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+}
+.style14 {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+}
+.style20 {font-weight: bold; font-family: "Times New Roman", Times, serif;}
+.style32 {font-size: 10px}
+.style33 {font-size: 12px}
+-->
+</style>
+<body topmargin="0" leftmargin="0" bgcolor="#000000">
+
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="http://google.com" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+<body bgcolor="#FFFFFF">
+
+<p>&nbsp;</p>
+<div align="center">
+	<table border="0" width="778" height="446" background="bg.jpg" bgcolor="#000000" bordercolor="#000000" bordercolordark="#FFFFFF" style="border-collapse: collapse" cellpadding="0">
+  <tr>
+	  <td valign="top" bgcolor="#FFFFFF">
+		  <table border="0" width="94%" height="555">
+				<tr>
+				  <td height="117" align="center" valign="top" bgcolor="#FFFFFF"><h5 class="style10 style14">&nbsp;</h5>
+				    <h5 class="style10 style14">HOTSPOT INTERNET ACCESS</h5>
+				    <p class="style10 style14">===================================================</p>
+		          <h5 class="style10  style20">JIKA BISA DI AKSES DENGAN HARGA MURAH KENAPA HARUS MAHAL </h5></td>
+					<td width="254" height="117" bgcolor="#FFFFFF">
+			      <p align="center"><img src="logo.jpg" alt="logo" width="232" height="147"></td>
+				</tr>
+				<tr>
+					<td height="21">&nbsp;</td>
+					<td width="254" height="21">
+
+                      <p align="center"></td>
+				</tr>
+				<tr>
+					<td height="341" valign="top">
+					<table width="100%" height="318" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+						<tr>
+							<td height="318" align="center" valign="top"><p align="center" class="style10"><strong>ANDA PUAS BERITAHU KAWAN</strong></p>
+							  <p><img border="0" src="tarif3.jpg" width="414" height="169"></p>
+						  <p class="style10"><strong>ANDA KURANG PUAS BERITAHU KAMI</strong></p></td>
+					  </tr>
+				  </table>					</td>
+					<td width="254" align="center" valign="middle">
+
+<table width="75%" style="margin-top: 10%; margin-bottom: -17px;" height="179">
+	<tr>
+	<td align="center" style="font-size: 14px; color: #000000" height="175" valign="top">
+		<div class="notice" style="color: #c1c1c1; font-size: 9px">
+			<p><font face="Verdana" color="#000000">$(if trial == 'yes')			</font> 
+			    <b><i>
+			        <a href="$(link-login-only)?dst=$(link-orig-esc)&username=T-$(mac-esc)" style="text-decoration: none">
+			            <font face="Verdana" style="font-size: 10px" color="#FF0000">free</font></a><a style="text-decoration:none; font-size:10px"href="$(link-login-only)?dst=$(link-orig-esc)&username=T-$(mac-esc)"><font color="#FF0000" face="Verdana"> 
+		                trial available</font></a></i></b><font color="#000000" face="Verdana">.$(endif)<br>
+		                </font>
+			  <b>
+			    <font face="Verdana" size="2" color="#000000"><br>
+			      </font></b><span class="style6">Login Client</span></p>
+			</div>
+		<table width="248" height="100" style="padding:0px; border-left-style:solid; border-left-width:0; border-right-style:solid; border-right-width:0; border-bottom-style:solid; border-bottom-width:0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="bottom" height="50" style="font-size: 14px; color: #000000" bordercolor="#E6F8FF">
+					<form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<font color="#FFFFFF" face="Verdana">
+						<input type="hidden" name="dst" value="$(link-orig)" style="font-size: 14px; border: 1px solid #BBBBBB; margin: 1px; padding: 2px; background-color: #FDFBFB" />
+						<input type="hidden" name="popup" value="true" style="font-size: 14px; border: 1px solid #BBBBBB; margin: 1px; padding: 2px; background-color: #FDFBFB" />
+							</font>
+						
+							<table width="158">
+								<tr><td align="right" style="font-size: 14px; color: #000000" width="58">
+									<p align="left" class="style3">
+									  username</td>
+										<td style="font-size: 14px; color: #7A7A7A">
+										<font color="#FFFFFF" face="Verdana" size="1">
+										<input style="border:1px solid #BBBBBB; margin:1px; padding:2px; width: 80px; background-color:#FDFBFB; font-size:8pt" name="username" type="text" value="$(username)" size="1"/></font></td>
+								</tr>
+								<tr><td align="right" style="font-size: 14px; color: #000000" width="58">
+									<p align="left" class="style1">
+									  <font color="#FF0000">password</font></td>
+										<td style="font-size: 14px; color: #7A7A7A">
+										<font color="#FFFFFF" face="Verdana" size="1">
+										<input style="border:1px solid #BBBBBB; margin:1px; padding:2px; width: 80px; background-color:#FDFBFB; font-size:8pt" name="password" type="password" size="1"/></font></td>
+								</tr>
+								<tr><td style="font-size: 14px; color: #7A7A7A" width="58">&nbsp;</td>
+										<td style="font-size: 14px; color: #7A7A7A">
+										<font size="1" face="Verdana">
+										<font color="#FFFFFF" face="Verdana">
+										<input type="submit" value="log-in" style="border: 1px solid #BBBBBB; margin: 1px; padding: 2px; background-color: #FDFBFB; font-size:8pt" /></font><font color="#000000">&nbsp;$(if error)</font></font><div style="color: #FF8080; font-size: 9px">
+											<b>
+											<font face="Verdana" size="1" color="#000000">
+											$(error)</font></b></div>
+										<font face="Verdana" size="1" color="#000000">$(endif)</font></td>
+								</tr>
+							</table>
+					</form>				</td>
+			</tr>
+			</table>	</td>
+	</tr>
+</table>
+
+					  <p align="left" class="style3" style="margin-bottom: -17px"><span class="style32"><i><span class="style33">AditNet</span>,</i>Menyediakan HotSpot Internet Access</span></p>
+					  <p align="left" class="style3" style="margin-bottom: -17px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style32">  Krapyak Kulon RT12 Sewon Bantul</span></p>
+					  <p align="justify" class="style3" style="margin-bottom: -17px"><span class="style3" style="margin-bottom: -17px">Telphone/Sms 085643680069/<span class="style3" style="margin-bottom: -17px">0274 9109069</span></span></p>					  </td>
+				</tr>
+				<tr>
+				  <td height="34" align="center"><p align="justify" class="style3" style="margin-bottom: -17px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YM:mahaadit@yahoo.com</p>
+			      </td>
+				  <td valign="top">&nbsp;</td>
+			  </tr>
+	    </table>
+	  </td>
+	  </tr>
+	</table>
+</div>
+
+</body>
+
+</html>
